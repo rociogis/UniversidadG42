@@ -2,6 +2,10 @@
 package Entidades;
 
 public class Materia {
+
+    public static void add(Inscripcion insc) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     private int IdMateria;
     private String Nombre;
     private int Año;

@@ -51,8 +51,13 @@ public class UniversidadG42 {
 //        Inscripcion Insc = new Inscripcion(alumno,materia,07.55);
         InscripcionData InscDat = new InscripcionData();
 //        InscDat.GuardaInscripcion(Insc);
-        for (Inscripcion Insc : InscDat.ObtenerInscripcion()) {
+        for (Inscripcion Insc : InscDat.ObtenerInscripcionPorAlumno(2)) {
             System.out.println(Insc.toString());
+        }
+        System.out.println("-------------------------------------");
+        
+        for (Materia mat : InscDat.ObtenerMateriasCursadas(3)) {
+            System.out.println(mat.toString());
         }
 
     }
